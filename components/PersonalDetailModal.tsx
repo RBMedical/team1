@@ -381,7 +381,7 @@ export function PersonalDetailModal({ open, initialHn = "", onClose }: Props) {
                             background: item.done ? "#18a779" : "#f0f4f8",
                             color: item.done ? "#fff" : "#8a98a9",
                           }}>
-                            {item.done ? "✓ ตรวจแล้ว" : "ยังไม่ตรวจ"}
+                            {item.done ? "✓ ผ่านแล้ว" : "ยังไม่ผ่าน"}
                           </span>
                         </div>
                       ));

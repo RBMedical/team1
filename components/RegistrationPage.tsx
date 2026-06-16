@@ -478,7 +478,11 @@ ${stickerHTML}
             style={{ flex: 1, height: "var(--btn-h)", borderRadius: 7, border: "1px solid #cfd9e5", background: "#fff", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 5, fontSize: "var(--fs-base)", fontWeight: 600, whiteSpace: "nowrap" }}>
             <Pencil size={14} />แก้ไข
           </button>
-         
+          <button
+            onClick={() => currentRow?.HN && onOpenPersonal?.(currentRow.HN)}
+            style={{ flex: 1, height: "var(--btn-h)", borderRadius: 7, border: "1px solid #bee1e8", background: "#e8f7fa", color: "#0c6075", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 5, fontSize: "var(--fs-base)", fontWeight: 600, whiteSpace: "nowrap" }}>
+            <UserCheck size={14} />Personal
+          </button>
           <button
             onClick={() => currentRow && setDeleteDialog(true)}
             style={{ flex: 1, height: "var(--btn-h)", borderRadius: 7, border: "1px solid #f5c2c7", background: "#fff", color: "#c63742", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 5, fontSize: "var(--fs-base)", fontWeight: 600, whiteSpace: "nowrap" }}>

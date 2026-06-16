@@ -121,7 +121,7 @@ export function ReportPage() {
 </style>
 </head>
 <body>
-<h2>รายชื่อผู้ัที่ยังไม่ได้เข้าตรวจ</h2>
+<h2>รายงานผู้เข้ารับการตรวจสุขภาพ</h2>
 <div class="sub">วันที่ ${today} · แสดง ${rows.length} รายการ</div>
 <table>
   <thead>
