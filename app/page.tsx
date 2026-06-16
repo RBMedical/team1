@@ -5,7 +5,6 @@ import {
   Cross, ClipboardPlus, TestTube2, ChartNoAxesCombined, Activity, Hospital, User, Download,
 } from "lucide-react";
 import { RegistrationPage } from "@/components/RegistrationPage";
-import * as XLSX from "xlsx";
 import { appScriptRequest } from "@/lib/api";
 import { ReportPage } from "@/components/ReportPage";
 import { SpecimenModal } from "@/components/SpecimenModal";
@@ -27,6 +26,7 @@ export default function Home() {
   async function handleExportExcel() {
     setExporting(true);
     try {
+      const XLSX = await import("xlsx");
       const result = await appScriptRequest<{
         ok: boolean;
         followData?: string[][];
@@ -197,7 +197,7 @@ export default function Home() {
         <header className="page-header">
           <div>
             <h1>ระบบลงทะเบียน</h1>
-            <p>Team 1</p>
+            <p>Team 2</p>
           </div>
           <div
             className="status-pill"
